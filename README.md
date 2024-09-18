@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "rg" {
 Este recurso define la agrupación de los demás componentes en una única ubicación.
 
 
-imagen
+![](docs/resourceGroup.png)
 
 ---
 ## ☁️ Creación del Storage Account
@@ -33,7 +33,7 @@ resource "azurerm_storage_account" "sa" {
 ```
 Este recurso se encargará de almacenar archivos necesarios para la aplicación.
 
-imagen 
+![](docs/storage.png)
 
 ---
 
@@ -52,7 +52,7 @@ resource "azurerm_service_plan" "sp" {
 
 ```
 
-imagenn 
+![](docs/app.png) 
 
 ---
 ## 🚀 Despliegue de la Function App
@@ -77,7 +77,7 @@ resource "azurerm_windows_function_app" "wfa" {
 }
 ```
 
-imagen 
+![](docs/function.png) 
 
 ---
 ## 🛠️ Configuración del Código y Pruebas
@@ -114,8 +114,7 @@ resource "azurerm_function_app_function" "faf" {
   })
 }
 ```
-imagen
-
+![](docs/code.png)
 
 ---
 ## 🌐 URL de la Function App
@@ -131,5 +130,5 @@ output "url" {
 ```
 Esta URL nos permitirá acceder a la aplicación de forma pública.
 
-imagen
+![](docs/url.png)
 
